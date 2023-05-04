@@ -1,6 +1,8 @@
 ﻿namespace GaardButik.Server.Context
 {
+    using GaardButik.Server.Model;
     using Microsoft.EntityFrameworkCore;
+    using System.Reflection;
 
     public class DataContext : DbContext
     {
@@ -16,5 +18,10 @@
             options.UseNpgsql(Configuration.GetConnectionString("GaardbutikDatabase"));
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfigurationsFromAssembly(typeof(EntityConfig<Entity>).Assembly);
+            base.OnModelCreating(builder);
+        }
     }
 }

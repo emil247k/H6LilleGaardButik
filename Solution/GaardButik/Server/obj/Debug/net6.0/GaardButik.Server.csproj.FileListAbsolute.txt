@@ -88,6 +88,7 @@ E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.AspNetCor
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -101,6 +102,7 @@ E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.JSInterop
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Npgsql.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\System.IO.Pipelines.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\GaardButik.Client.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\GaardButik.Shared.dll
@@ -128,3 +130,11 @@ E:\H6Svendproeve\Solution\GaardButik\Server\obj\Debug\net6.0\refint\GaardButik.S
 E:\H6Svendproeve\Solution\GaardButik\Server\obj\Debug\net6.0\GaardButik.Server.pdb
 E:\H6Svendproeve\Solution\GaardButik\Server\obj\Debug\net6.0\GaardButik.Server.genruntimeconfig.cache
 E:\H6Svendproeve\Solution\GaardButik\Server\obj\Debug\net6.0\ref\GaardButik.Server.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Humanizer.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Mono.TextTemplating.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\System.CodeDom.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\System.Text.Json.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

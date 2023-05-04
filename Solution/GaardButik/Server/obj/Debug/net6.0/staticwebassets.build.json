@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EZcWV+nJR/5qKin37JuwDMHqvLChVT+BRIHVVI2Bsc0=",
+  "Hash": "ecVmBZ2cw4s93U9vTSvN/utnwBYCCUbY78RiRChPu0s=",
   "Source": "GaardButik.Server",
   "BasePath": "_content/GaardButik.Server",
   "Mode": "Default",
@@ -369,91 +369,6 @@
       "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\runtimes\\browser-wasm\\lib\\net6.0\\Microsoft.CSharp.dll"
     },
     {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.3\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.3\\lib\\net6.0\\Microsoft.EntityFrameworkCore.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.3\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Caching.Abstractions.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Caching.Memory.dll"
-    },
-    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -468,7 +383,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Configuration.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\lib\\netstandard2.0\\Microsoft.Extensions.Configuration.Abstractions.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Binder.dll",
@@ -553,7 +468,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
@@ -570,7 +485,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
+      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll",
@@ -638,7 +553,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.3\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -655,7 +570,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Logging.dll"
+      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\lib\\netstandard2.1\\Microsoft.Extensions.Logging.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
@@ -672,7 +587,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Options.dll"
+      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\lib\\netstandard2.1\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
@@ -689,7 +604,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\lib\\net6.0\\Microsoft.Extensions.Primitives.dll"
+      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.Primitives.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
@@ -826,40 +741,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Npgsql.dll",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Npgsql.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\npgsql\\7.0.2\\lib\\net6.0\\Npgsql.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Npgsql.EntityFrameworkCore.PostgreSQL.dll",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.3\\lib\\net6.0\\Npgsql.EntityFrameworkCore.PostgreSQL.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -3633,23 +3514,6 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.FileVersionInfo.dll"
     },
     {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\05bxoP+h.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
-    },
-    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\0kVbwajk.gz",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -3665,23 +3529,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Requests.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\0uyAkN5f.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\133xAVnn.gz",
@@ -3750,23 +3597,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Mail.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\1mah7EZb.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\2fsOTGWT.gz",
@@ -4209,23 +4039,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\9+MERKGk.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Npgsql.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Npgsql.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Npgsql.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\9FQZm7Tj.gz",
@@ -4687,6 +4500,23 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Immutable.dll"
     },
     {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\D1lpCNrt.gz",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Project",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Primitives.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
+    },
+    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\D5ucyH6L.gz",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -4736,57 +4566,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlSerializer.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\DwsKnHns.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\dwynnibh.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\E0x+BAJC.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Primitives.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\ecmEvo2e.gz",
@@ -4889,6 +4668,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Timer.dll"
+    },
+    {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\G6A9mAJf.gz",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Project",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\g9FbdPaJ.gz",
@@ -5112,23 +4908,6 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Extensions.dll"
     },
     {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\ihZhsxYK.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll"
-    },
-    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\IIYtAXwN.gz",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -5299,6 +5078,23 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.DataAnnotations.dll"
     },
     {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\j2Xbr3wd.gz",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Project",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+    },
+    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\J44wZspv.gz",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -5314,23 +5110,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Handles.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\J7MuXpzC.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\Jeh30gv0.gz",
@@ -5894,23 +5673,6 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.Annotations.dll"
     },
     {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\pCcekgxb.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll"
-    },
-    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\pCrb5hl2.gz",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -6149,6 +5911,23 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tools.dll"
     },
     {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\Rizk8W2c.gz",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Project",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
+    },
+    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\ROslcvRV.gz",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -6232,6 +6011,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Serialization.Formatters.dll"
+    },
+    {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\sBtO9RrL.gz",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Project",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Options.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Options.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\SeCZd+p1.gz",
@@ -6353,23 +6149,6 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Calendars.dll"
     },
     {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\sZYNv6EU.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
-    },
-    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\tfWWCa2C.gz",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -6402,6 +6181,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\GaardButik.Client.dll"
+    },
+    {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\Tt8wfJIg.gz",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Project",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\u8YmeYNk.gz",
@@ -6555,6 +6351,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Thread.dll"
+    },
+    {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\VbKCVaj9.gz",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Project",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\vF+wESc9.gz",
@@ -6778,40 +6591,6 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.CoreLib.dll"
     },
     {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\xpcflNVl.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\XpoOiNrC.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Npgsql.EntityFrameworkCore.PostgreSQL.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Npgsql.EntityFrameworkCore.PostgreSQL.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Npgsql.EntityFrameworkCore.PostgreSQL.dll"
-    },
-    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\xQinKw96.gz",
       "SourceId": "GaardButik.Client",
       "SourceType": "Project",
@@ -6997,23 +6776,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.ILGeneration.dll"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\YjVBPSlw.gz",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Project",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\obj\\Debug\\net6.0\\build-gz\\ystSolOp.gz",

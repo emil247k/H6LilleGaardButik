@@ -80,14 +80,6 @@
             },
             "Patterns": null
           },
-          "icudt.dat": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/icudt.dat"
-            },
-            "Patterns": null
-          },
           "icudt_CJK.dat": {
             "Children": null,
             "Asset": {
@@ -109,6 +101,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/icudt_no_CJK.dat"
+            },
+            "Patterns": null
+          },
+          "icudt.dat": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/icudt.dat"
             },
             "Patterns": null
           },
@@ -165,46 +165,6 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/Microsoft.CSharp.dll"
-            },
-            "Patterns": null
-          },
-          "Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll"
-            },
-            "Patterns": null
-          },
-          "Microsoft.EntityFrameworkCore.dll": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.EntityFrameworkCore.dll"
-            },
-            "Patterns": null
-          },
-          "Microsoft.EntityFrameworkCore.Relational.dll": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll"
-            },
-            "Patterns": null
-          },
-          "Microsoft.Extensions.Caching.Abstractions.dll": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll"
-            },
-            "Patterns": null
-          },
-          "Microsoft.Extensions.Caching.Memory.dll": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Caching.Memory.dll"
             },
             "Patterns": null
           },
@@ -381,22 +341,6 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/netstandard.dll"
-            },
-            "Patterns": null
-          },
-          "Npgsql.dll": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Npgsql.dll"
-            },
-            "Patterns": null
-          },
-          "Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Npgsql.EntityFrameworkCore.PostgreSQL.dll"
             },
             "Patterns": null
           },
@@ -1704,27 +1648,11 @@
             },
             "Patterns": null
           },
-          "Microsoft.Extensions.DependencyInjection.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz"
-            },
-            "Patterns": null
-          },
           "System.Net.Requests.dll.gz": {
             "Children": null,
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Net.Requests.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
             },
             "Patterns": null
           },
@@ -1757,14 +1685,6 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Net.Mail.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Microsoft.Extensions.Options.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Options.dll.gz"
             },
             "Patterns": null
           },
@@ -1973,14 +1893,6 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Npgsql.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Npgsql.dll.gz"
             },
             "Patterns": null
           },
@@ -2200,6 +2112,14 @@
             },
             "Patterns": null
           },
+          "Microsoft.Extensions.Primitives.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Microsoft.Extensions.Primitives.dll.gz"
+            },
+            "Patterns": null
+          },
           "System.Text.Encoding.Extensions.dll.gz": {
             "Children": null,
             "Asset": {
@@ -2221,30 +2141,6 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Xml.XmlSerializer.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Microsoft.Extensions.Caching.Abstractions.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Microsoft.EntityFrameworkCore.Abstractions.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Microsoft.Extensions.Primitives.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Primitives.dll.gz"
             },
             "Patterns": null
           },
@@ -2293,6 +2189,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Threading.Timer.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Logging.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Microsoft.Extensions.Logging.dll.gz"
             },
             "Patterns": null
           },
@@ -2400,14 +2304,6 @@
             },
             "Patterns": null
           },
-          "Microsoft.Extensions.Configuration.Abstractions.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz"
-            },
-            "Patterns": null
-          },
           "System.Console.dll.gz": {
             "Children": null,
             "Asset": {
@@ -2488,19 +2384,19 @@
             },
             "Patterns": null
           },
+          "Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
+            },
+            "Patterns": null
+          },
           "System.Runtime.Handles.dll.gz": {
             "Children": null,
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Runtime.Handles.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Microsoft.Extensions.Caching.Memory.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz"
             },
             "Patterns": null
           },
@@ -2768,14 +2664,6 @@
             },
             "Patterns": null
           },
-          "Microsoft.EntityFrameworkCore.Relational.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll.gz"
-            },
-            "Patterns": null
-          },
           "System.IO.Pipelines.dll.gz": {
             "Children": null,
             "Asset": {
@@ -2888,6 +2776,14 @@
             },
             "Patterns": null
           },
+          "Microsoft.Extensions.Logging.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz"
+            },
+            "Patterns": null
+          },
           "Microsoft.AspNetCore.Components.WebAssembly.dll.gz": {
             "Children": null,
             "Asset": {
@@ -2925,6 +2821,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Runtime.Serialization.Formatters.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Options.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Microsoft.Extensions.Options.dll.gz"
             },
             "Patterns": null
           },
@@ -2984,14 +2888,6 @@
             },
             "Patterns": null
           },
-          "Microsoft.Extensions.Logging.Abstractions.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz"
-            },
-            "Patterns": null
-          },
           "System.Net.HttpListener.dll.gz": {
             "Children": null,
             "Asset": {
@@ -3005,6 +2901,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/GaardButik.Client.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.Configuration.Abstractions.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Microsoft.Extensions.Configuration.Abstractions.dll.gz"
             },
             "Patterns": null
           },
@@ -3077,6 +2981,14 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Threading.Thread.dll.gz"
+            },
+            "Patterns": null
+          },
+          "Microsoft.Extensions.DependencyInjection.dll.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz"
             },
             "Patterns": null
           },
@@ -3184,22 +3096,6 @@
             },
             "Patterns": null
           },
-          "Microsoft.Extensions.Logging.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.Extensions.Logging.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Npgsql.EntityFrameworkCore.PostgreSQL.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Npgsql.EntityFrameworkCore.PostgreSQL.dll.gz"
-            },
-            "Patterns": null
-          },
           "System.dll.gz": {
             "Children": null,
             "Asset": {
@@ -3285,14 +3181,6 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "_framework/System.Reflection.Emit.ILGeneration.dll.gz"
-            },
-            "Patterns": null
-          },
-          "Microsoft.EntityFrameworkCore.dll.gz": {
-            "Children": null,
-            "Asset": {
-              "ContentRootIndex": 0,
-              "SubPath": "_framework/Microsoft.EntityFrameworkCore.dll.gz"
             },
             "Patterns": null
           },
@@ -3390,6 +3278,14 @@
           },
           "open-iconic": {
             "Children": {
+              "FONT-LICENSE": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 2,
+                  "SubPath": "css/open-iconic/FONT-LICENSE"
+                },
+                "Patterns": null
+              },
               "font": {
                 "Children": {
                   "css": {
@@ -3454,14 +3350,6 @@
                   }
                 },
                 "Asset": null,
-                "Patterns": null
-              },
-              "FONT-LICENSE": {
-                "Children": null,
-                "Asset": {
-                  "ContentRootIndex": 2,
-                  "SubPath": "css/open-iconic/FONT-LICENSE"
-                },
                 "Patterns": null
               },
               "ICON-LICENSE": {
