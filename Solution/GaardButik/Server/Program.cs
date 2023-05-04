@@ -1,4 +1,7 @@
+using GaardButik.Server.Context;
+using GaardButik.Server.Handler.Base;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +9,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<DatabaseContext>();
+builder.Services.AddScoped<IDatabaseContext>(provider => provider.GetService<DatabaseContext>());
+builder.Services.Scan(scannner =>
+    scannner.FromCallingAssembly()
+        .AddClasses(classes => classes.AssignableTo(typeof(ICommandHandler<>)))
+            .AsImplementedInterfaces()
+            .WithScopedLifetime()
+        .AddClasses(classes => classes.AssignableTo(typeof(IQueryHandler<,>)))
+            .AsImplementedInterfaces()
+            .WithScopedLifetime());
 
 var app = builder.Build();
 

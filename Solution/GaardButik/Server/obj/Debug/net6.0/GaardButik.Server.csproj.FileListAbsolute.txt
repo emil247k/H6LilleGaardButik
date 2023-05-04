@@ -138,3 +138,4 @@ E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\System.CodeDom.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\System.Text.Json.dll
 E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+E:\H6Svendproeve\Solution\GaardButik\Server\bin\Debug\net6.0\Scrutor.dll

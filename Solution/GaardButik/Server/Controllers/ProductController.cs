@@ -1,4 +1,5 @@
-﻿using GaardButik.Shared;
+﻿using GaardButik.Server.Handler;
+using GaardButik.Shared;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GaardButik.Server.Controllers
@@ -7,17 +8,17 @@ namespace GaardButik.Server.Controllers
     [Route("[controller]")]
     public class ProductController : ControllerBase
     {
-        private readonly ILogger<ProductController> _logger;
+        private IProductQueryHandler productQueryHandler;
 
-        public ProductController(ILogger<ProductController> logger)
+        public ProductController(ILogger<ProductController> logger, IProductQueryHandler productQueryHandler)
         {
-            _logger = logger;
+            this.productQueryHandler = productQueryHandler;
         }
 
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public async Task<ICollection<Product>> Get()
         {
-            throw new NotImplementedException();
+            return await productQueryHandler.Handle(new Query.ProductQuery());
         }
     }
 }

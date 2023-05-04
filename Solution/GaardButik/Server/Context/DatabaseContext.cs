@@ -4,14 +4,16 @@
     using Microsoft.EntityFrameworkCore;
     using System.Reflection;
 
-    public class DataContext : DbContext
+    public class DatabaseContext : DbContext, IDatabaseContext
     {
         protected readonly IConfiguration Configuration;
 
-        public DataContext(IConfiguration configuration)
+        public DatabaseContext(IConfiguration configuration)
         {
             Configuration = configuration;
         }
+
+        public DatabaseContext Instance => this;
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
