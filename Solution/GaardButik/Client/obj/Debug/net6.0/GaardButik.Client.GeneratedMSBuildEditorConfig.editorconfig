@@ -1,0 +1,49 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = GaardButik.Client
+build_property.RootNamespace = GaardButik.Client
+build_property.ProjectDir = E:\H6Svendproeve\Solution\GaardButik\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\H6Svendproeve\Solution\GaardButik\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/H6Svendproeve/Solution/GaardButik/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/H6Svendproeve/Solution/GaardButik/Client/Pages/DiscountGiftBasket.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzY291bnRHaWZ0QmFza2V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/H6Svendproeve/Solution/GaardButik/Client/Pages/Fraktura.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJha3R1cmEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/H6Svendproeve/Solution/GaardButik/Client/Pages/ProductPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/H6Svendproeve/Solution/GaardButik/Client/Pages/Statistics.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhdGlzdGljcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/H6Svendproeve/Solution/GaardButik/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/H6Svendproeve/Solution/GaardButik/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-k6icemxsev
+
+[E:/H6Svendproeve/Solution/GaardButik/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-nf7t6dp6mg

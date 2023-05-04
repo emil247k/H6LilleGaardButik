@@ -1,0 +1,89 @@
+﻿@page "/"
+@using GaardButik.Shared
+@inject HttpClient Http
+
+<h3>ProductPage</h3>
+<table class="table">
+    <thead>
+        <tr>
+        @foreach (string column in selectedProductsColumns.Select(x => x.Name))
+        {
+            <th>@column</th>
+        }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Product product in products)
+        {
+            <tr>
+                @foreach (System.Reflection.PropertyInfo column in selectedProductsColumns)
+                {
+                
+                        <td>@column.GetValue(product, null)</td>
+                
+                }
+            </tr>
+        }
+    </tbody>
+    <div class="dropdown">
+        <button @onclick="Toggle" class="btn btn-secondary" type="button">
+            <span>Columns</span>
+        </button>
+        <!--max-width: fit-content-->
+        <ul class="list-group" style="@(isActive ? "" : "display:none")">
+            @foreach (System.Reflection.PropertyInfo column in productsColumns)
+            {
+                <li class="list-group-item">
+                    <input type="checkbox" class="form-check-input" @onchange="((e) => columnToggeled(e, column))"/>@column.Name
+                </li>
+            }
+        </ul>
+    </div>
+</table>
+@code {
+    public List<System.Reflection.PropertyInfo> productsColumns = typeof(Product).GetProperties().ToList();
+    public List<System.Reflection.PropertyInfo> selectedProductsColumns;
+
+    public List<Product>? products;
+
+    public bool isActive = false;
+
+    public void Toggle()
+    {
+        isActive = !isActive;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = new List<Product>()
+        {
+            new Product()
+            {
+                Id = 0,
+                Name="test",
+                TypeDescription = "test sotmhing ",
+                ExperationDate = DateTime.Now
+            }
+        };
+        selectedProductsColumns = new List<System.Reflection.PropertyInfo>()
+        {
+            typeof(Product).GetProperty("Name"),
+            typeof(Product).GetProperty("Description"),
+            typeof(Product).GetProperty("ExperationDate")
+        };
+        //products = await Http.GetFromJsonAsync<List<Product>>("products");
+    }
+
+    public void columnToggeled(ChangeEventArgs eventArgs, System.Reflection.PropertyInfo column)
+    {
+        bool isColumnChecked = (bool)eventArgs.Value;
+        if(isColumnChecked && !selectedProductsColumns.Contains(column))
+        {
+            selectedProductsColumns.Add(column);
+        }
+        else if (selectedProductsColumns.Contains(column))
+        {
+            selectedProductsColumns.Remove(column);
+        }
+    }
+}
