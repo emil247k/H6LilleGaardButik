@@ -38,7 +38,7 @@ namespace GaardButik.Server.Handler
             var product = new Product()
             {
                 Name = command.Name,
-                ExperationDate = command.ExperationDate,
+                ExperationDate = command.ExperationDate.ToUniversalTime(),
                 Price = command.Price,
                 KGPrice = command.KGPrice,
                 Type = productType,

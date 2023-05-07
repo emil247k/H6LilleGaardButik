@@ -6,9 +6,9 @@ namespace GaardButik.Shared.Command
     {
         public long TypeId { get; set; }
 
-        public string TypeName { get; set; }
+        public string? TypeName { get; set; }
 
-        public string TypeDescription { get; set; }
+        public string? TypeDescription { get; set; }
 
         public string Name { get; set; }
 
