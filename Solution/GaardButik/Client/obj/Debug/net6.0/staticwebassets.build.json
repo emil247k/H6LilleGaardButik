@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zCRoSTwM8poiM8AwDEslolhG33mrfy6/zxmEtAqg7RQ=",
+  "Hash": "i1B1dFixoVwKUWZbBRuB1tEXgfZG7O6bCLThMgKQDrM=",
   "Source": "GaardButik.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -170,6 +170,23 @@
       "OriginalItemSpec": "E:\\H6Svendproeve\\Solution\\GaardButik\\Shared\\bin\\Debug\\net6.0\\GaardButik.Shared.pdb"
     },
     {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\runtimes\\browser-wasm\\native\\icudt.dat"
+    },
+    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "GaardButik.Client",
       "SourceType": "Computed",
@@ -219,23 +236,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
-    },
-    {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Emil\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -6953,23 +6953,6 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "GaardButik.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
-    },
-    {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "GaardButik.Client",
       "SourceType": "Discovered",
@@ -7070,6 +7053,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "GaardButik.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "E:\\H6Svendproeve\\Solution\\GaardButik\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",

@@ -15,7 +15,7 @@
         @foreach (var data in ListData)
         {
             <tr @onclick="((e) => SelectRow(GetSelectedItemProperty(data)))">
-                <td ><Input type="checkbox" class="form-check-input" checked="@SelectedItem.Contains(GetSelectedItemProperty(data))"/></td>
+                <td ><input type="checkbox" class="form-check-input" checked="@SelectedItem.Contains(GetSelectedItemProperty(data))"/></td>
                 @foreach (var column in SelectedColumns)
                 {
 

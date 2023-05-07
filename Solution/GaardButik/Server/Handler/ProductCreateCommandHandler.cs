@@ -1,4 +1,4 @@
-﻿using GaardButik.Server.Command;
+﻿using GaardButik.Shared.Command;
 using GaardButik.Server.Context;
 using GaardButik.Server.Model;
 using Microsoft.EntityFrameworkCore;
@@ -21,9 +21,18 @@ namespace GaardButik.Server.Handler
                 Description = command.TypeDescription
             };
 
+            if(Validate(command))
+            {
+                throw new Exception("Et eller flere felter er ikke udfyldt rigtigt");
+            }
+
             if(command.TypeId != 0)
             {
                 productType = await databaseContext.Instance.Set<ProductType>().SingleAsync(x => x.Id == command.TypeId);
+            }
+            else if (await databaseContext.Instance.Set<ProductType>().AnyAsync(x => x.Name == command.TypeName))
+            {
+                throw new Exception("Der exister alrede en produkt type med dette navn");
             }
 
             var product = new Product()
@@ -32,7 +41,6 @@ namespace GaardButik.Server.Handler
                 ExperationDate = command.ExperationDate,
                 Price = command.Price,
                 KGPrice = command.KGPrice,
-                TypeId = command.TypeId,
                 Type = productType,
                 IsDeleted = false,
                 IsSold = false,
@@ -43,6 +51,14 @@ namespace GaardButik.Server.Handler
                 await databaseContext.Instance.Set<Product>().AddAsync(product);
             }
             await databaseContext.Instance.SaveChangesAsync();
+        }
+        
+        public bool Validate(ProductCreateCommand command)
+        {
+            return string.IsNullOrWhiteSpace(command.Name) ||
+                (command.Price == 0 && command.KGPrice == 0) ||
+                command.ExperationDate == default ||
+                command.amount == 0;
         }
     }
 }

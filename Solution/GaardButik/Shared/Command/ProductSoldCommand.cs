@@ -1,6 +1,6 @@
-﻿using GaardButik.Server.Command.Base;
+﻿using GaardButik.Shared.Command.Base;
 
-namespace GaardButik.Server.Command
+namespace GaardButik.Shared.Command
 {
     public class ProductSoldCommand : ICommand
     {

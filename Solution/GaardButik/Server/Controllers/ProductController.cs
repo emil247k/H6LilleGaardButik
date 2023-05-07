@@ -1,7 +1,7 @@
-﻿using GaardButik.Server.Command;
+﻿using GaardButik.Shared.Command;
 using GaardButik.Server.Handler;
-using GaardButik.Shared;
 using Microsoft.AspNetCore.Mvc;
+using GaardButik.Shared.Query;
 
 namespace GaardButik.Server.Controllers
 {
@@ -13,23 +13,33 @@ namespace GaardButik.Server.Controllers
         private IProductCreateCommandHandler productCreateCommandHandler;
         private IProductDeleteCommandHandler productDeleteCommandHandler;
         private IProductSoldCommandHandler productSoldCommandHandler;
+        private IProductTypeQueryHandler productTypeQueryHandler;
 
         public ProductController(
             IProductQueryHandler productQueryHandler,
             IProductCreateCommandHandler productCreateCommandHandler,
             IProductDeleteCommandHandler productDeleteCommandHandler,
-            IProductSoldCommandHandler productSoldCommandHandler)
+            IProductSoldCommandHandler productSoldCommandHandler,
+            IProductTypeQueryHandler productTypeQueryHandler)
         {
             this.productQueryHandler = productQueryHandler;
             this.productCreateCommandHandler = productCreateCommandHandler;
             this.productDeleteCommandHandler = productDeleteCommandHandler;
             this.productSoldCommandHandler = productSoldCommandHandler;
+            this.productTypeQueryHandler = productTypeQueryHandler;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await productQueryHandler.Handle(new Query.ProductQuery()));
+            return Ok(await productQueryHandler.Handle(new ProductQuery()));
+        }
+
+        [HttpGet]
+        [Route("ProductType")]
+        public async Task<IActionResult> GetProductType()
+        {
+            return Ok(await productTypeQueryHandler.Handle(new ProductTypeQuery()));
         }
 
         [HttpPost]
@@ -39,14 +49,16 @@ namespace GaardButik.Server.Controllers
             return Ok();
         }
 
-        [HttpPost("/Delete")]
+        [HttpPost]
+        [Route("Delete")]
         public async Task<IActionResult> Delete([FromBody] ProductDeleteCommand productDeleteCommand)
         {
             await productDeleteCommandHandler.Handle(productDeleteCommand);
             return Ok();
         }
 
-        [HttpPost("/Sold")]
+        [HttpPost]
+        [Route("Sold")]
         public async Task<IActionResult> Sold([FromBody] ProductSoldCommand productSoldCommand)
         {
             await productSoldCommandHandler.Handle(productSoldCommand);

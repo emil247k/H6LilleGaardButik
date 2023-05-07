@@ -1,4 +1,4 @@
-﻿using GaardButik.Server.Command;
+﻿using GaardButik.Shared.Command;
 using GaardButik.Server.Context;
 using GaardButik.Server.Model;
 using Microsoft.EntityFrameworkCore;

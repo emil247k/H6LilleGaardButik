@@ -1,6 +1,6 @@
 ﻿using GaardButik.Server.Context;
 using GaardButik.Server.Model;
-using GaardButik.Server.Query;
+using GaardButik.Shared.Query;
 using Microsoft.EntityFrameworkCore;
 
 namespace GaardButik.Server.Handler

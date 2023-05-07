@@ -1,4 +1,4 @@
-﻿using GaardButik.Server.Query.Base;
+﻿using GaardButik.Shared.Query.Base;
 
 namespace GaardButik.Server.Handler.Base
 {

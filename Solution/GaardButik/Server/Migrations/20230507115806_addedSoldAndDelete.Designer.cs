@@ -3,6 +3,7 @@ using System;
 using GaardButik.Server.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GaardButik.Server.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20230507115806_addedSoldAndDelete")]
+    partial class addedSoldAndDelete
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

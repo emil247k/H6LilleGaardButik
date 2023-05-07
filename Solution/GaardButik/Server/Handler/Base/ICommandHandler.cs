@@ -1,4 +1,4 @@
-﻿using GaardButik.Server.Command.Base;
+﻿using GaardButik.Shared.Command.Base;
 
 namespace GaardButik.Server.Handler.Base
 {

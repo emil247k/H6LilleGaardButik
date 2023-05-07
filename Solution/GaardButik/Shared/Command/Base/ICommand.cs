@@ -1,4 +1,4 @@
-﻿namespace GaardButik.Server.Command.Base
+﻿namespace GaardButik.Shared.Command.Base
 {
     public interface ICommand
     {

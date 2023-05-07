@@ -1,4 +1,4 @@
-﻿namespace GaardButik.Server.Query.Base
+﻿namespace GaardButik.Shared.Query.Base
 {
     public interface IQuery
     {

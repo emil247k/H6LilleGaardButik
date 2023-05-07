@@ -1,76 +1,114 @@
 ﻿@page "/"
 @using GaardButik.Client.MetaData;
+@using GaardButik.Shared.Command;
 @inject HttpClient Http
 
 <h3>Overblik</h3>
 <div>
-    <button class="oi oi-plus" @onclick="() => OpenCreateModal=true"></button>
-    <button class="oi oi-trash" @onclick="() => OpenDeleteModal=true"></button>
-    <button class="oi oi-dollar"></button>
+    <button class="oi oi-plus" @onclick="() => openCreateModal=true"></button>
+    <button class="oi oi-trash" @onclick="() => openDeleteModal=true"></button>
+    <button class="oi oi-dollar" @onclick="() => openSoldModal=true"></button>
 </div>
 <ListView 
-    ListData="Products"
-    TypeMetadata="productType"
+    ListData="products"
+          TypeMetadata="productMetaData"
     @bind-SelectedItem="@selectedRows">
 </ListView>
-<div>
-    @foreach (var a in selectedRows)
-    {
-        <a>@a</a>
-    }
-</div>
 
-<Modal Title="Opret" @bind-ShowModal="@OpenCreateModal" ModalOk="CreateProduct">
-    <p>somthing somthing</p>
+<Modal Title="Opret" @bind-ShowModal="@openCreateModal" ModalOk="CreateProduct">
+    <select @bind="productCreateCommand.TypeId">
+        @foreach (var type in productTypes)
+        {
+            <option value="@type.Id">@type.Name</option>
+        }
+        <option value="0">Ny</option>
+    </select>
+    @if (productCreateCommand.TypeId == 0)
+    {
+        <label>Produkt type navn</label>
+        <input @bind="productCreateCommand.TypeName" />
+        <br />
+        <label>Produkt type beskrivelse</label>
+        <input @bind="productCreateCommand.TypeDescription" />
+        <br/>
+    }
+    <label>Produkt navn</label>
+    <input @bind="productCreateCommand.Name" />
+    <br/>
+    <label>Produkt pris</label>
+    <input @bind="productCreateCommand.Price" />
+    <br />
+    <label>Produkt kilo pris</label>
+    <input @bind="productCreateCommand.KGPrice" />
+    <br />
+    <label>Produkt udløbsdato</label>
+    <input type=date @bind="productCreateCommand.ExperationDate" />
+    <br />
+    <label>antal af produkted</label>
+    <input @bind="productCreateCommand.amount" />
+    <br />
 </Modal>
-<Modal Title="Slet" @bind-ShowModal="@OpenDeleteModal" ModalOk="DeleteProduct" IsCreate="false">
-    <p>somthing somthing</p>
+
+<Modal Title="Slet" @bind-ShowModal="@openDeleteModal" ModalOk="DeleteProduct" IsCreate="false">
+    <p>produkter der vil blive slætted</p>
+    @foreach(var product in products.Where(x => selectedRows.Contains(x.Id)))
+    {
+        <p>@product.Name @product.ExperationDate</p>
+    }
+</Modal>
+
+<Modal Title="Solgt" @bind-ShowModal="@openSoldModal" ModalOk="SoldProduct">
+    <p>produkter der vil blive solgt</p>
+    @foreach (var product in products.Where(x => selectedRows.Contains(x.Id)))
+    {
+        <p>@product.Name @product.ExperationDate</p>
+    }
 </Modal>
 @code {
     public List<long> selectedRows { get; set; } = new List<long>();
 
-    public List<Product> Products = new List<Product>()
-    {
-        new Product()
-        {
-            Id = 1,
-            Name = "test",
-            ExperationDate = new DateTime(),
-            KGPrice = 404,
-            Price = 404,
-            TypeDescription = "somthing",
-            TypeName = "somthing 2"
-        }
-    };
+    public List<Product> products = new List<Product>();
 
-    public ProductMetaData productType = new ProductMetaData();
+    public ProductMetaData productMetaData = new ProductMetaData();
 
-    public bool OpenCreateModal = false;
+    public bool openCreateModal = false;
 
-    public bool OpenDeleteModal = false;
+    public bool openDeleteModal = false;
+
+    public bool openSoldModal = false;
+
+    public List<ProductType> productTypes = new List<ProductType>();
+
+    public ProductCreateCommand productCreateCommand = new ProductCreateCommand();
 
     protected override async Task OnInitializedAsync()
     {
-        //products = await Http.GetFromJsonAsync<List<Product>>("products");
+        await GetProducts();
+        productTypes = (await Http.GetFromJsonAsync<ICollection<ProductType>>("Product/ProductType")).ToList();
     }
 
-    public void CreateProduct()
+    public async Task GetProducts()
     {
-        Products.Add(new Product()
-        {
-            Id = 2,
-            Name = "test",
-            ExperationDate = new DateTime(),
-            KGPrice = 404,
-            Price = 404,
-            TypeDescription = "somthing",
-            TypeName = "somthing 2"
-        });
+        products = (await Http.GetFromJsonAsync<ICollection<Product>>("Product")).ToList();
     }
 
-    public void DeleteProduct()
+    public async Task CreateProduct()
     {
-        Products.RemoveAll(x => selectedRows.Contains(x.Id));
+        await Http.PostAsJsonAsync("Product", productCreateCommand);
+        await GetProducts();
+    }
+
+    public async Task DeleteProduct()
+    {
+        await Http.PostAsJsonAsync("Product/Delete", new ProductDeleteCommand(){ ProductIds = selectedRows });
+        products.RemoveAll(x => selectedRows.Contains(x.Id));
+        selectedRows = new List<long>();
+    }
+
+    public async Task SoldProduct()
+    {
+        await Http.PostAsJsonAsync("Product/Sold", new ProductSoldCommand() { ProductIds = selectedRows });
+        products.RemoveAll(x => selectedRows.Contains(x.Id));
         selectedRows = new List<long>();
     }
 }
