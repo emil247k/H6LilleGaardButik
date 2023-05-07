@@ -13,5 +13,9 @@
         public long TypeId { get; set; }
 
         public ProductType Type { get; set; }
+
+        public bool IsDeleted { get; set; }
+
+        public bool IsSold { get; set; }
     }
 }

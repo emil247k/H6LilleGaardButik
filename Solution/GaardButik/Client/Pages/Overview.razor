@@ -1,0 +1,76 @@
+﻿@page "/"
+@using GaardButik.Client.MetaData;
+@inject HttpClient Http
+
+<h3>Overblik</h3>
+<div>
+    <button class="oi oi-plus" @onclick="() => OpenCreateModal=true"></button>
+    <button class="oi oi-trash" @onclick="() => OpenDeleteModal=true"></button>
+    <button class="oi oi-dollar"></button>
+</div>
+<ListView 
+    ListData="Products"
+    TypeMetadata="productType"
+    @bind-SelectedItem="@selectedRows">
+</ListView>
+<div>
+    @foreach (var a in selectedRows)
+    {
+        <a>@a</a>
+    }
+</div>
+
+<Modal Title="Opret" @bind-ShowModal="@OpenCreateModal" ModalOk="CreateProduct">
+    <p>somthing somthing</p>
+</Modal>
+<Modal Title="Slet" @bind-ShowModal="@OpenDeleteModal" ModalOk="DeleteProduct" IsCreate="false">
+    <p>somthing somthing</p>
+</Modal>
+@code {
+    public List<long> selectedRows { get; set; } = new List<long>();
+
+    public List<Product> Products = new List<Product>()
+    {
+        new Product()
+        {
+            Id = 1,
+            Name = "test",
+            ExperationDate = new DateTime(),
+            KGPrice = 404,
+            Price = 404,
+            TypeDescription = "somthing",
+            TypeName = "somthing 2"
+        }
+    };
+
+    public ProductMetaData productType = new ProductMetaData();
+
+    public bool OpenCreateModal = false;
+
+    public bool OpenDeleteModal = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //products = await Http.GetFromJsonAsync<List<Product>>("products");
+    }
+
+    public void CreateProduct()
+    {
+        Products.Add(new Product()
+        {
+            Id = 2,
+            Name = "test",
+            ExperationDate = new DateTime(),
+            KGPrice = 404,
+            Price = 404,
+            TypeDescription = "somthing",
+            TypeName = "somthing 2"
+        });
+    }
+
+    public void DeleteProduct()
+    {
+        Products.RemoveAll(x => selectedRows.Contains(x.Id));
+        selectedRows = new List<long>();
+    }
+}

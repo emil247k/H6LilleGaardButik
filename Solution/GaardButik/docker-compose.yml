@@ -1,0 +1,26 @@
+version: '3.4'
+name: gaardbutik
+services:
+    gaardbutik.database:
+        container_name: database
+        restart: always
+        image: ${DOCKER_REGISTRY-}postgres:15-alpine
+        environment:
+            - POSTGRES_DB=gaardbutikDB
+            - POSTGRES_USER=gaardbutik
+            - POSTGRES_PASSWORD=gaardbutik123
+        ports:
+            - "5432:5432"
+        volumes:
+            - postgres-data:/var/lib/postgresql/data
+    gaardbutik.server:
+        container_name: server
+        image: ${DOCKER_REGISTRY-}gaardbutikserver
+        build:
+            context: .
+            dockerfile: Server/Dockerfile.original
+        depends_on:
+            - gaardbutik.database
+
+volumes:
+    postgres-data:

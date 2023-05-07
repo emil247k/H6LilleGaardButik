@@ -1,6 +1,7 @@
 ﻿using GaardButik.Server.Context;
 using GaardButik.Server.Model;
 using GaardButik.Server.Query;
+using Microsoft.EntityFrameworkCore;
 
 namespace GaardButik.Server.Handler
 {
@@ -14,14 +15,14 @@ namespace GaardButik.Server.Handler
 
         public async Task<ICollection<Shared.Product>> Handle(ProductQuery query)
         {
-            return databaseContext.Instance.Set<Product>().Select(x => new Shared.Product()
+            return await databaseContext.Instance.Set<Product>().Where(x => !x.IsSold && !x.IsDeleted).Select(x => new Shared.Product()
             {
                 Name = x.Name,
                 Price = x.Price,
                 KGPrice = x.KGPrice,
                 ExperationDate = x.ExperationDate,
                 Id = x.Id,
-            }).ToList();
+            }).ToListAsync();
         }
     }
 }

@@ -1,0 +1,99 @@
+﻿@using GaardButik.Client.MetaData;
+@typeparam ListType
+@typeparam SelectionProperty
+<table class="table">
+    <thead>
+        <tr>
+            <th>Valgt</th>
+            @foreach (var column in SelectedColumns)
+            {
+                <th>@column.Value</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var data in ListData)
+        {
+            <tr @onclick="((e) => SelectRow(GetSelectedItemProperty(data)))">
+                <td ><Input type="checkbox" class="form-check-input" checked="@SelectedItem.Contains(GetSelectedItemProperty(data))"/></td>
+                @foreach (var column in SelectedColumns)
+                {
+
+                    <td style="max-width: fit-content">@column.Key.GetValue(data, null)</td>
+
+                }
+            </tr>
+        }
+    </tbody>
+    <div class="dropdown">
+        <button @onclick="Toggle" class="btn btn-secondary" type="button">
+            <span>Columns</span>
+        </button>
+        <ul class="list-group" style="max-width: fit-content; @(isActive ? "" : "display:none")">
+            @foreach (var column in PossibelColumns)
+            {
+                <li class="list-group-item">
+                    <input type="checkbox" class="form-check-input" checked="@SelectedColumns.Keys.Contains(column.Key)" @onchange="((e) => ColumnToggeled(e, column.Key))" />@column.Value
+                </li>
+            }
+        </ul>
+    </div>
+</table>
+@code {
+    [Parameter]
+    public IMetaData<ListType> TypeMetadata { get; set; }
+    [Parameter]
+    public List<ListType>? ListData { get; set; }
+    [Parameter]
+    public List<SelectionProperty> SelectedItem { get; set; }
+    [Parameter]
+    public EventCallback<List<SelectionProperty>> SelectedItemChanged { get; set; }
+
+    private Dictionary<PropertyInfo, string> PossibelColumns { get; set; }
+    private Dictionary<PropertyInfo, string> SelectedColumns { get; set; }
+
+    private bool isActive = false;
+
+    public void Toggle()
+    {
+        isActive = !isActive;
+    }
+
+    protected override void OnInitialized()
+    {
+        PossibelColumns = TypeMetadata.GetPropertyDisplayValues();
+        SelectedColumns = TypeMetadata.GetSelectedPropertys();
+    }
+
+    public void ColumnToggeled(ChangeEventArgs eventArgs, System.Reflection.PropertyInfo column)
+    {
+        bool isColumnChecked = (bool)eventArgs.Value;
+        if (isColumnChecked && !SelectedColumns.Keys.Contains(column))
+        {
+            SelectedColumns.Add(column, PossibelColumns[column]);
+        }
+        else if (SelectedColumns.Keys.Contains(column))
+        {
+            SelectedColumns.Remove(column);
+        }
+    }
+
+    public async Task SelectRow(SelectionProperty row)
+    {
+        if (!SelectedItem.Contains(row))
+        {
+            SelectedItem.Add(row);
+        }
+        else if (SelectedItem.Contains(row))
+        {
+            SelectedItem.Remove(row);
+        }
+    }
+
+    public SelectionProperty GetSelectedItemProperty(ListType selectionProperyData)
+    {
+        return (SelectionProperty)TypeMetadata.SelectionProperty.GetValue(selectionProperyData, null);
+    }
+    
+    
+}

@@ -1,0 +1,60 @@
+﻿@if(ShowModal)
+{
+    <div class="modal fade show" style="display:block; background-color: rgba(10,10,10,.8);" aria-modal="true" role="dialog" @onclick="@Cancel">
+        <div class="modal-dialog" @onclick:stopPropagation="true">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">@Title</h4>
+                    <button type="button" class="close" @onclick="@Cancel">&times;</button>
+                </div>
+                <div class="modal-body">
+                    @ChildContent
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" @onclick="@Cancel">Annuler</button>
+                    @if(IsCreate)
+                    {
+                        <button type="button" class="btn btn-success" @onclick=@Ok>Opret</button>
+                    }
+                    else
+                    {
+                        <button type="button" class="btn btn-danger" @onclick=@Ok>Slet</button>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+}
+@code
+{
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public bool ShowModal { get; set; } = false;
+    [Parameter]
+    public EventCallback<bool> ShowModalChanged { get; set; }
+    [Parameter]
+    public EventCallback ModalOk { get; set; } = new EventCallback();
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    public bool IsCreate { get; set; } = true;
+
+    public async Task Show()
+    {
+        ShowModal = true;
+        await ShowModalChanged.InvokeAsync();
+    }
+    public async Task Cancel()
+    {
+        ShowModal = false;
+        await ShowModalChanged.InvokeAsync();
+    }
+    public async Task Ok()
+    {
+        ShowModal = false;
+        await ShowModalChanged.InvokeAsync();
+        await ModalOk.InvokeAsync();
+    }
+}
