@@ -1,0 +1,84 @@
+name: dockercompose8254448550777882588
+services:
+  gaardbutik.database:
+    container_name: database
+    environment:
+      POSTGRES_DB: gaardbutikDB
+      POSTGRES_PASSWORD: gaardbutik123
+      POSTGRES_USER: gaardbutik
+    image: postgres:15-alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: "5432"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: postgres-data
+      target: /var/lib/postgresql/data
+      volume: {}
+  gaardbutik.server:
+    build:
+      context: E:\H6Svendproeve\Solution\GaardButik
+      dockerfile: Server/Dockerfile.original
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: GaardButik.Server
+    container_name: server
+    depends_on:
+      gaardbutik.database:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: gaardbutikserver
+    labels:
+      com.microsoft.visual-studio.project-name: GaardButik.Server
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath
+        /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages3  "/app/GaardButik.Server.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: C:\Users\Emil\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Emil\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Emil\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose8254448550777882588_default
+volumes:
+  postgres-data:
+    name: dockercompose8254448550777882588_postgres-data
