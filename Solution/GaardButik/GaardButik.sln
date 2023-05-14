@@ -11,6 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GaardButik.Shared", "Shared
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C779E242-8DE2-47D4-8DEE-2AA8D5C74480}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GaardButik.Test", "..\GaardButik.Test\GaardButik.Test.csproj", "{E3BE9E3E-0943-4ED7-87FA-245CCA54932C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5038653A-5E63-4334-A30C-CA9E587288AD} = {5038653A-5E63-4334-A30C-CA9E587288AD}
+		{CFD0BD52-B3B0-4F02-8D75-26DAD4AB2A80} = {CFD0BD52-B3B0-4F02-8D75-26DAD4AB2A80}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,10 @@ Global
 		{C779E242-8DE2-47D4-8DEE-2AA8D5C74480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C779E242-8DE2-47D4-8DEE-2AA8D5C74480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C779E242-8DE2-47D4-8DEE-2AA8D5C74480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3BE9E3E-0943-4ED7-87FA-245CCA54932C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3BE9E3E-0943-4ED7-87FA-245CCA54932C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3BE9E3E-0943-4ED7-87FA-245CCA54932C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3BE9E3E-0943-4ED7-87FA-245CCA54932C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -35,21 +35,22 @@ namespace GaardButik.Server.Handler
                 throw new Exception("Der exister alrede en produkt type med dette navn");
             }
 
-            var product = new Product()
-            {
-                Name = command.Name,
-                ExperationDate = command.ExperationDate.ToUniversalTime(),
-                Price = command.Price,
-                KGPrice = command.KGPrice,
-                Type = productType,
-                IsDeleted = false,
-                IsSold = false,
-
-            };
             for (int i = 0; i<command.amount; i++)
             {
+                var product = new Product()
+                {
+                    Name = command.Name,
+                    ExperationDate = command.ExperationDate.ToUniversalTime(),
+                    Price = command.Price,
+                    KGPrice = command.KGPrice,
+                    Type = productType,
+                    IsDeleted = false,
+                    IsSold = false,
+
+                };
                 await databaseContext.Instance.Set<Product>().AddAsync(product);
             }
+
             await databaseContext.Instance.SaveChangesAsync();
         }
         

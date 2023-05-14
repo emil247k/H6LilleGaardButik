@@ -13,7 +13,7 @@
             Configuration = configuration;
         }
 
-        public DatabaseContext Instance => this;
+        public DbContext Instance => this;
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {

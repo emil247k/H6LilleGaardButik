@@ -1,9 +1,58 @@
 ﻿@page "/fraktura"
+@using GaardButik.Client.MetaData;
 @using GaardButik.Shared
+@using GaardButik.Shared.Command;
 @inject HttpClient Http
+@inject IJSRuntime JS
 
 <h3>Fraktura</h3>
+<ListView ListData="products"
+          TypeMetadata="productMetaData"
+          @bind-SelectedItem="@selectedRows">
+</ListView>
+<button @onclick="test"></button>
 
 @code {
+    public List<long> selectedRows { get; set; } = new List<long>();
+
+    public List<Product> products = new List<Product>();
+
+    public ProductMetaData productMetaData = new ProductMetaData();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetProducts();
+    }
+
+    public async Task GetProducts()
+    {
+        products = (await Http.GetFromJsonAsync<ICollection<Product>>("Product")).ToList();
+    }
+
+    public async Task test()
+    {
+        var createCommand = new FakturaCreateCommand()
+        {
+            To = "test",
+            Address = "test address",
+            Products = selectedRows
+        };
+        var response = await Http.PostAsJsonAsync("Faktura", createCommand);
+        if (response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<FileResult>();
+            var bytes = Convert.FromBase64String(result.FileContents);
+            var filename = result.FileDownloadName;
+            var contentType = result.ContentType;
+            await JS.InvokeVoidAsync("saveAsFile", filename, Convert.ToBase64String(bytes), contentType);
+        }
+        
+    }
+    public class FileResult
+    {
+        public string ContentType { get; set; }
+        public string FileDownloadName { get; set; }
+        public string FileContents { get; set; }
+    }
 
 }

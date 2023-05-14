@@ -6,4 +6,9 @@ namespace GaardButik.Server.Handler.Base
     {
         Task Handle(TCommand command);
     }
+
+    public interface ICommandHandler<TCommand, TReturn> where TCommand : ICommand
+    {
+        Task<TReturn> Handle(TCommand command);
+    }
 }

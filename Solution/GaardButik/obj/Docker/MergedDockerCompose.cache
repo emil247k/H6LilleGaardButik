@@ -1,9 +1,12 @@
 name: dockercompose8254448550777882588
 services:
-  db:
-    build:
-      context: E:\H6Svendproeve\Solution\GaardButik
-      dockerfile: Server/Dockerfile.postgres
+  gaardbutik.database:
+    container_name: database
+    environment:
+      POSTGRES_DB: gaardbutikDB
+      POSTGRES_PASSWORD: gaardbutik123
+      POSTGRES_USER: gaardbutik
+    image: postgres:15-alpine
     networks:
       default: null
     ports:
@@ -11,22 +14,19 @@ services:
       target: 5432
       published: "5432"
       protocol: tcp
+    restart: always
     volumes:
     - type: volume
       source: postgres-data
       target: /var/lib/postgresql/data
       volume: {}
-    - type: bind
-      source: E:\H6Svendproeve\Solution\GaardButik\Server\DBinit.sql
-      target: /docker-entrypoint-initdb.d/init.sql
-      bind:
-        create_host_path: true
   gaardbutik.server:
     build:
       context: E:\H6Svendproeve\Solution\GaardButik
       dockerfile: Server/Dockerfile.original
+    container_name: server
     depends_on:
-      db:
+      gaardbutik.database:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development

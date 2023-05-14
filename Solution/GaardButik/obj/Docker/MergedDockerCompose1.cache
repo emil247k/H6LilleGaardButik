@@ -1,30 +1,12 @@
 name: dockercompose8254448550777882588
 services:
-  db:
-    build:
-      context: E:\H6Svendproeve\Solution\GaardButik
-      dockerfile: Server/Dockerfile.postgres
-      labels:
-        com.microsoft.created-by: visual-studio
-        com.microsoft.visual-studio.project-name: GaardButik.Server
-    container_name: GaardButik.Server
-    entrypoint:
-    - tail
-    - -f
-    - /dev/null
+  gaardbutik.database:
+    container_name: database
     environment:
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
-      DOTNET_USE_POLLING_FILE_WATCHER: "1"
-      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2;/root/.nuget/fallbackpackages3
-    image: db:dev
-    labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
-        --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath
-        /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages3  "/app/bin/Debug/net6.0/GaardButik.Server.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
-        dotnet); then kill $$PID; fi"
-      com.microsoft.visualstudio.debuggee.program: dotnet
-      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+      POSTGRES_DB: gaardbutikDB
+      POSTGRES_PASSWORD: gaardbutik123
+      POSTGRES_USER: gaardbutik
+    image: postgres:15-alpine
     networks:
       default: null
     ports:
@@ -32,64 +14,8 @@ services:
       target: 5432
       published: "5432"
       protocol: tcp
-    tty: true
+    restart: always
     volumes:
-    - type: bind
-      source: E:\H6Svendproeve\Solution\GaardButik\Server
-      target: /app
-      bind:
-        create_host_path: true
-    - type: bind
-      source: E:\H6Svendproeve\Solution\GaardButik\Server\DBinit.sql
-      target: /docker-entrypoint-initdb.d/init.sql
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Users\Emil\vsdbg\vs2017u5
-      target: /remote_debugger
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Users\Emil\AppData\Roaming/ASP.NET/Https
-      target: /root/.aspnet/https
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Users\Emil\AppData\Roaming/Microsoft/UserSecrets
-      target: /root/.microsoft/usersecrets
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
-      target: /root/.nuget/fallbackpackages
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Program Files (x86)\Microsoft\Xamarin\NuGet\
-      target: /root/.nuget/fallbackpackages2
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Program Files\dotnet\sdk\NuGetFallbackFolder
-      target: /root/.nuget/fallbackpackages3
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Users\Emil\.nuget\packages\
-      target: /root/.nuget/packages
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: E:\H6Svendproeve\Solution\GaardButik
-      target: /src
-      bind:
-        create_host_path: true
     - type: volume
       source: postgres-data
       target: /var/lib/postgresql/data
@@ -101,10 +27,9 @@ services:
       labels:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: GaardButik.Server
-      target: base
-    container_name: GaardButik.Server_1
+    container_name: server
     depends_on:
-      db:
+      gaardbutik.database:
         condition: service_started
     entrypoint:
     - tail
@@ -112,15 +37,13 @@ services:
     - /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
       ASPNETCORE_URLS: https://+:443;http://+:80
-      DOTNET_USE_POLLING_FILE_WATCHER: "1"
-      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2;/root/.nuget/fallbackpackages3
-    image: gaardbutikserver:dev
+    image: gaardbutikserver
     labels:
+      com.microsoft.visual-studio.project-name: GaardButik.Server
       com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
         --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath
-        /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages3  "/app/bin/Debug/net6.0/GaardButik.Server.dll"'
+        /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages3  "/app/GaardButik.Server.dll"'
       com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
         dotnet); then kill $$PID; fi"
       com.microsoft.visualstudio.debuggee.program: dotnet
@@ -137,11 +60,6 @@ services:
     tty: true
     volumes:
     - type: bind
-      source: E:\H6Svendproeve\Solution\GaardButik\Server
-      target: /app
-      bind:
-        create_host_path: true
-    - type: bind
       source: C:\Users\Emil\vsdbg\vs2017u5
       target: /remote_debugger
       bind:
@@ -156,35 +74,6 @@ services:
       source: C:\Users\Emil\AppData\Roaming/Microsoft/UserSecrets
       target: /root/.microsoft/usersecrets
       read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages
-      target: /root/.nuget/fallbackpackages
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Program Files (x86)\Microsoft\Xamarin\NuGet\
-      target: /root/.nuget/fallbackpackages2
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Program Files\dotnet\sdk\NuGetFallbackFolder
-      target: /root/.nuget/fallbackpackages3
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Users\Emil\.nuget\packages\
-      target: /root/.nuget/packages
-      read_only: true
-      bind:
-        create_host_path: true
-    - type: bind
-      source: E:\H6Svendproeve\Solution\GaardButik
-      target: /src
       bind:
         create_host_path: true
 networks:

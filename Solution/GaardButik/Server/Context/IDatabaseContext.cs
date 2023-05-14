@@ -4,6 +4,6 @@ namespace GaardButik.Server.Context
 {
     public interface IDatabaseContext
     {
-        DatabaseContext Instance { get; }
+        DbContext Instance { get; }
     }
 }

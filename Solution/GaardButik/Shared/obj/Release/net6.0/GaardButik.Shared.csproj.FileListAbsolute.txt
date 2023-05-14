@@ -1,0 +1,12 @@
+E:\H6Svendproeve\Solution\GaardButik\Shared\bin\Release\net6.0\GaardButik.Shared.deps.json
+E:\H6Svendproeve\Solution\GaardButik\Shared\bin\Release\net6.0\GaardButik.Shared.dll
+E:\H6Svendproeve\Solution\GaardButik\Shared\bin\Release\net6.0\GaardButik.Shared.pdb
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\GaardButik.Shared.csproj.AssemblyReference.cache
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\GaardButik.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\GaardButik.Shared.AssemblyInfoInputs.cache
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\GaardButik.Shared.AssemblyInfo.cs
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\GaardButik.Shared.csproj.CoreCompileInputs.cache
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\GaardButik.Shared.dll
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\refint\GaardButik.Shared.dll
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\GaardButik.Shared.pdb
+E:\H6Svendproeve\Solution\GaardButik\Shared\obj\Release\net6.0\ref\GaardButik.Shared.dll

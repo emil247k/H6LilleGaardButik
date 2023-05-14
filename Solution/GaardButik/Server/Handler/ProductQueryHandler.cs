@@ -22,6 +22,8 @@ namespace GaardButik.Server.Handler
                 KGPrice = x.KGPrice,
                 ExperationDate = x.ExperationDate,
                 Id = x.Id,
+                TypeDescription = x.Type.Description,
+                TypeName = x.Type.Name,
             }).ToListAsync();
         }
     }
